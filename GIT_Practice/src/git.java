@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class git {
 	public static void main(String[] args) {
@@ -16,5 +18,13 @@ public class git {
 			}
 		}
 		System.out.println("Hello World!");
+		
+		Set<Integer> s = new HashSet<>();
+		for(int i: al) {
+			if(!s.add(i)) {
+				System.out.println("This is the duplicate element: " + i);
+			}
+		}
+		
 	}
 }
