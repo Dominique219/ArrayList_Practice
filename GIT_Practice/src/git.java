@@ -26,5 +26,29 @@ public class git {
 			}
 		}
 		
+		
+		Integer e[] = {12,34,5654,234,654,234,645};
+		int lar = e[0];
+		int slar = e[0];
+		for(int i = 0; i < e.length; i++) {
+			if(e[i]>lar) {
+				slar = lar;
+				lar = e[i];
+			}else if(e[i]>slar) {
+				slar = e[i];
+			}
+		}
+		System.out.println(lar);
+		System.out.println(slar);
+		
+		for(int i =0; i<e.length;i++) {
+			for(int j = i+1; j<e.length;j++) {
+				if(e[i].equals(e[j])) {
+					System.out.println(e[j]);
+				}
+			}
+			System.out.println("Hello World!!");
+			System.out.println("123123");
+		}
 	}
 }
